@@ -1,18 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import {Navbar} from './Components-Navbar/Navbar.jsx';
-
+import {Navbar} from './Components/Navbar.js'
+import { ItemListContainer } from './ItemListContainer/ItemListContainer';
 function App() {
   return (
     
-    <div className="App-header">
+    <div>
       <Navbar/>
-      
-      <header className="App-header">
+      <ItemListContainer greeting="Benvenido a la tienda MMA !"/>
+     
         
         
        
-      </header>
+      
     </div>
   );
 }

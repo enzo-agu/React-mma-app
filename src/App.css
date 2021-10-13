@@ -1,12 +1,3 @@
-.navbar{
-  display: flex;
-  flex-direction: row;
-  
-    width: auto;
-    height: auto;
- }
-
-
 .App {
   text-align: center;
   background-color:cadetblue;
