@@ -1,5 +1,5 @@
-import './Navbar.css';
-import { Cardwiget } from '../Cardwiget/Cardwiget';
+import './Styles/Styles.css';
+import { Cardwiget } from '../Utils/Cardwiget';
 
 export const Navbar =()=>{
        
@@ -9,7 +9,7 @@ export const Navbar =()=>{
           <Cardwiget className=""/>
           </div>
           <div className="navbar" >
-          <h1>Tienda MMA </h1>
+          <h1 className="titulos">Contact MMA! </h1>
           <div>
           <button>Home</button>
           <button>Guantes</button>
