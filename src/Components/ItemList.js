@@ -1,3 +1,4 @@
+/*
 import { Item } from "./Item"
 import {Data} from '../Utils/Data.js';
 import { useEffect, useState } from "react";
@@ -29,3 +30,4 @@ getData(Data).then(res =>setProduct(res))
         </>
     )
 }
+*/

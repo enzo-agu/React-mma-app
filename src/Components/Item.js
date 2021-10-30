@@ -1,6 +1,6 @@
 
 
-
+/*
 export const Item = ({producto}) => {
     return(
         <>
@@ -20,4 +20,4 @@ export const Item = ({producto}) => {
            </div>
         </>
     )
-} 
+} */

@@ -1,7 +1,8 @@
 import '../Components/Styles/Styles.css';
 import { useState } from "react"
 import { ItemCount } from "../Components/ItemCount"
-import { ItemList } from '../Components/ItemList';
+import { ItemDetailContainer } from '../Components/ItemDetailContainer';
+
 
 
 
@@ -43,8 +44,8 @@ export const ItemListContainer = ({ greeting }) => {
 
       <div>
         <ItemCount onAdd={increase} stock={decrease} initial={count} />
-        <ItemList/>
-
+      <ItemDetailContainer/>
+         
 
 
 

@@ -9,7 +9,23 @@
 .botones{
   background-color:darkcyan;
 }
-
+.recuadro{
+  background-color: cornflowerblue;
+  display: flex;
+  border-top: solid 2px  black;
+  border-right: solid 2px  black;
+	border-bottom: solid 2px  black;
+	border-left: solid 2px  black;;
+  margin-bottom: 80px;
+  margin-right: 70%;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.recuadro-boton{
+  margin-left: 40px;
+}
 .span1{
   display: flex;
   flex-direction: column;

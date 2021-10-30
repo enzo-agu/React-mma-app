@@ -6,7 +6,7 @@ export  const Data = [{
     category:' remera-Lycra',
     price:' $ 2800',
     stock:" 3",
-    img:''
+    img:'../img/imgLycras/lycra2.jpg'
 },
 {
     id:2,
