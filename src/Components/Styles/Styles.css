@@ -62,3 +62,24 @@
     font-size: calc(10px + 2vmin);
     color: white;
   }
+
+.ErrorPage-bc{
+  display: flex;
+  background-color:rgb(149, 153, 179) ;
+  justify-content: center;
+}
+.imgDeError{
+  display: flex;
+  justify-content: center;
+}
+.letraPortada{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.portada{
+  display:flex;
+  justify-content: right;
+  background-color: #3d424e;
+}
+.tituloPortada{
+ margin-left: -80px;
+}

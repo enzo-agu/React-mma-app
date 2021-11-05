@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './Styles/Styles.css';
 
 export const ItemCount=({stock,initial,onAdd})=>{

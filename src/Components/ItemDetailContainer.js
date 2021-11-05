@@ -1,13 +1,17 @@
-
+import React from 'react';
 import { ItemDetail } from '../Components/ItemDetail'
 import {Data} from '../Utils/Data.js';
 import { useEffect, useState } from "react";
 import './Styles/Styles.css';
+import { useParams } from 'react-router';
 
 
 export const ItemDetailContainer=()=>{
 
     //efecto de montaje
+
+const {id} =useParams()
+
 
     const [product,setProduct]=useState([])
    useEffect(()=>{

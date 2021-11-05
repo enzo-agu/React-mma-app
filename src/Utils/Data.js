@@ -23,6 +23,14 @@ export  const Data = [{
     price:' $ 8000',
     stock:" 12",
     img:''
+},
+{
+    id:4,
+    name:' instinct',
+    category:'Guantes',
+    price:' $ 8000',
+    stock:" 12",
+    img:''
 }
 ]
 
