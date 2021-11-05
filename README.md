@@ -1,4 +1,4 @@
-Proyecto de e-commerce: indumentaria deportiva de mma.
+Proyecto de e-commerce: indumentaria y artículos deportivos de mma.
 
 Dentro de la aplicación se puede navegar a través de diferentes secciones para ver los artículos disponibles.
 La idea final sería agregar cierta cantidad de productos a un carrito de compras.
