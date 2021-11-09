@@ -11,24 +11,24 @@ export  const Data = [{
 {
     id:2,
     name:' Koral A2',
-    category:' Kimono',
-    price:' $ 14000',
+    category:'remera-Lycra ',
+    price:' $ 2900',
     stock:" 1",
     img: ''
 },
 {
     id:3,
     name:' Shiai A3',
-    category:' Kimono',
-    price:' $ 8000',
+    category:' remera-Lycra',
+    price:' $ 3700',
     stock:" 12",
     img:''
 },
 {
     id:4,
     name:' instinct',
-    category:'Guantes',
-    price:' $ 8000',
+    category:'remera-Lycra',
+    price:' $ 4000',
     stock:" 12",
     img:''
 }

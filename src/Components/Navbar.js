@@ -13,8 +13,8 @@ export const Navbar =()=>{
           <h1 className="titulos">Contact MMA! </h1>
           <div>
           <Link to="/">      <button>Home</button></Link>
-          <Link to="/category/remera-Lycras"><button>Lycras</button></Link>
-          <Link to="/category/Guantes"><button>Guantes</button></Link>
+          <Link to="/category/licras"><button>Lycras</button></Link>
+          <Link to="/Guantes"><button>Guantes</button></Link>
           <button>Bermudas</button>
           <Link to="/cart"><button>Contacto</button></Link>
           </div>

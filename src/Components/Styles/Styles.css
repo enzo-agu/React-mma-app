@@ -83,3 +83,9 @@
 .tituloPortada{
  margin-left: -80px;
 }
+
+.cart{
+  display: flex;
+  margin-left: 60px;
+  background-color: #3d424e;
+}

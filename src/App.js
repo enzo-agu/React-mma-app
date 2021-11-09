@@ -6,7 +6,7 @@ import {Navbar} from './Components/Navbar.js'
 import { ItemListContainer } from './Container/ItemListContainer';
 import { ErrorPage } from './Utils/ErrorPage';
 import { Portada } from './Utils/Portada';
-
+import { ItemContainerGuantes } from './Components/ItemContainerGuantes';
 
 function App() {
   return (
@@ -18,12 +18,17 @@ function App() {
       <Switch>
         <Route exact path="/">
       <ItemListContainer greeting="Bienvenido a la tienda MMA !"/>
+      <ItemContainerGuantes/>
+      <ItemDetailContainer/>
         </Route>
         <Route exact path="/category/licras">
           <ItemDetailContainer/>
         </Route>
-        <Route exact path="/category/:id">
+        <Route exact path="/category/:ID">
           <ItemDetailContainer/>
+        </Route>
+        <Route exact path="/Guantes">
+          <ItemContainerGuantes/>
         </Route>
         <Route exact path="/cart">
           <Portada/>

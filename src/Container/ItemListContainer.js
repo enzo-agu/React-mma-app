@@ -8,7 +8,7 @@ import { ItemDetailContainer } from '../Components/ItemDetailContainer';
 
 
 export const ItemListContainer = ({ greeting }) => {
-
+/*
   const [count, setCount] = useState(1) // contador iniciado en 1
   //funcion para aumentar
   const increase = () => {
@@ -31,7 +31,7 @@ export const ItemListContainer = ({ greeting }) => {
 
   }
 
-
+*/
   return (
     <>
       <div className="titulos">
@@ -40,13 +40,14 @@ export const ItemListContainer = ({ greeting }) => {
       <div>
         <h3 className="titulos">
           Remera de lycra manga larga!
+          <img src="../img/LycraMLarga.jpg" width="350px" height="200px" alt=""></img>
+
         </h3>
       </div>
 
       <div>
-        <ItemCount onAdd={increase} stock={decrease} initial={count} />
-      <ItemDetailContainer/>
-         
+        
+      
 
 
 

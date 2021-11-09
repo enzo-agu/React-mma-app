@@ -1,12 +1,12 @@
 import React from 'react';
-import { ItemDetail } from '../Components/ItemDetail'
-import {Data} from '../Utils/Data.js';
+import { ItemDetailGuantes } from './ItemDetailGuantes'
+import {DataGuantes} from '../Utils/DataGuantes';
 import { useEffect, useState } from "react";
 import './Styles/Styles.css';
 import { useParams } from 'react-router';
 
 
-export const ItemDetailContainer=()=>{
+export const ItemContainerGuantes=()=>{
 
     //efecto de montaje
 
@@ -26,14 +26,14 @@ const {ID} =useParams()
     },2000)  //2 segundos de para mostrar los productos
     });
 
-getData(Data).then(res =>setProduct(res))
+getData(DataGuantes).then(res =>setProduct(res))
 .catch(err => console.log (err))
 },[ID])
 
 return(
     <>
         
-        {product.length ? product.map((p)=><ItemDetail key={p.id}  producto={p} />) 
+        {product.length ? product.map((p)=><ItemDetailGuantes key={p.id}  producto={p} />) 
         : <span className="span1">Cargando...</span>}
       
       

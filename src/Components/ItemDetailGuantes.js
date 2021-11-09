@@ -4,8 +4,8 @@ import { useState,useEffect } from "react"
 import '../Components/Styles/Styles.css';
 import { ItemCount } from './ItemCount';
 import { Cart } from './Cart';
-
-export const ItemDetail = ({producto,onAdd,initial,stock}) => {
+import { ItemGuantes } from './ItemGuantes';
+export const ItemDetailGuantes = ({producto,onAdd,initial,stock}) => {
 
   const[flag,setflag]=useState(true)
   const [count, setCount] = useState(1) // contador iniciado en 1
@@ -13,8 +13,8 @@ export const ItemDetail = ({producto,onAdd,initial,stock}) => {
   
 
   //funcion para aumentar
-  const increase = () => {
-    
+  const increase = (e) => {
+    console.log(e)
     setCount(count + 1)
     
     // el contador solo llega hasta 5, si quiere sumar más salta el alert
@@ -69,9 +69,8 @@ const unmount=()=>{
            </h4>
            </div>
            <div className="recuadro ItemCount">
-            
-           <img src="../img/lycra2.jpg" width="150 px" height="150 px" alt=""></img>
-           <ItemCount onAdd={increase} stock={decrease} initial={count} ></ItemCount>
+           <img src="../img/guantes-adidas.jpg" width="170 px" height="160 px" alt=""></img>
+           <ItemGuantes onAdd={increase} stock={decrease} initial={count} ></ItemGuantes>
            {flag && <Cart />}
            </div>
            <button onClick={()=>{setflag(true)}} >carrito</button>
