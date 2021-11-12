@@ -1,8 +1,5 @@
 import React from 'react';
 import '../Components/Styles/Styles.css';
-import { useState } from "react"
-import { ItemCount } from "../Components/ItemCount"
-import { ItemDetailContainer } from '../Components/ItemDetailContainer';
 
 
 

@@ -34,7 +34,7 @@ return(
     <>
         
         {product.length ? product.map((p)=><ItemDetailGuantes key={p.id}  producto={p} />) 
-        : <span className="span1">Cargando...</span>}
+        : <span className="span1">Guantes en camino...</span>}
       
       
     </>

@@ -1,8 +1,7 @@
 
 import React from 'react';
-import { useState,useEffect } from "react"
+import { useState } from "react"
 import '../Components/Styles/Styles.css';
-import { ItemCount } from './ItemCount';
 import { Cart } from './Cart';
 import { ItemGuantes } from './ItemGuantes';
 export const ItemDetailGuantes = ({producto,onAdd,initial,stock}) => {

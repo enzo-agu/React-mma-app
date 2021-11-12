@@ -7,12 +7,13 @@ import { ItemListContainer } from './Container/ItemListContainer';
 import { ErrorPage } from './Utils/ErrorPage';
 import { Portada } from './Utils/Portada';
 import { ItemContainerGuantes } from './Components/ItemContainerGuantes';
+import { CartContext } from './Components/Context/CartContext';
 
 function App() {
   return (
     <>
     
-    
+    <CartContext>
       <BrowserRouter>
       <Navbar/>
       <Switch>
@@ -38,6 +39,7 @@ function App() {
        </Route> 
        </Switch>
       </BrowserRouter>
+      </CartContext>
    </>
   );
 }
