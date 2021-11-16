@@ -16,7 +16,7 @@
   border-right: solid 2px  black;
 	border-bottom: solid 2px  black;
 	border-left: solid 2px  black;;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   margin-right: 70%;
   margin-left: 20px;
   padding-top: 20px;
@@ -51,6 +51,12 @@
     align-items: flex-start;
     background-color: #282c34;
     
+}
+.cardwiget2{
+  display: flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  
 }
    .App-header {
     background-color: #282c34;

@@ -8,6 +8,7 @@ import { ErrorPage } from './Utils/ErrorPage';
 import { Portada } from './Utils/Portada';
 import { ItemContainerGuantes } from './Components/ItemContainerGuantes';
 import { CartContext } from './Components/Context/CartContext';
+import { Cart } from './Components/Cart';
 
 function App() {
   return (
@@ -31,8 +32,11 @@ function App() {
         <Route exact path="/Guantes">
           <ItemContainerGuantes/>
         </Route>
-        <Route exact path="/cart">
+        <Route exact path="/portada">
           <Portada/>
+        </Route>
+        <Route exact path="/cart">
+          <Cart/>
         </Route>
        <Route  path="*">
        <ErrorPage/>

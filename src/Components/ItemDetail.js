@@ -1,14 +1,11 @@
 
 import React from 'react';
 import '../Components/Styles/Styles.css';
-import { ItemCount } from './ItemCount';
-import { Cart } from './Cart';
-import { ThemeUse } from './Context/CartContext';
+import { Link } from 'react-router-dom';
 
 export const ItemDetail = ({producto,onAdd,initial,stock}) => {
 
-   //lógica anterior pasada al CartContext, funciona ahora a través del ThemeUse().
-   const {increase,decrease,flag,setflag,count,addItem,removeItem}= ThemeUse()
+   //LOGICA ANTERIOR QUE AGREGABA AL CARRITO, PASADA A CART.JS
 
     return(
         <>
@@ -23,16 +20,14 @@ export const ItemDetail = ({producto,onAdd,initial,stock}) => {
            </h4>
            </div>
            <div className="recuadro ItemCount">
-            
+           <Link to="/cart"  > <button>
            <img src="../img/lycra2.jpg" width="150 px" height="150 px" alt=""></img>
-           <ItemCount onAdd={increase} stock={decrease} initial={count} ></ItemCount>
-           {flag && <Cart />}
+           </button></Link>      
            </div>
-           <button onClick={()=>{setflag(true)}} >carrito</button>
-           <button onClick={addItem} > Sumar al carrito </button>
-           <button onClick={removeItem} > Restar productos del carrito </button>
+           <Link to="/cart"  ><button className="">Ir a la compra</button></Link>
 
-           
+          
+
     
            
         </>

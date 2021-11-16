@@ -16,7 +16,7 @@ export const Navbar =()=>{
           <Link to="/category/licras"><button>Lycras</button></Link>
           <Link to="/Guantes"><button>Guantes</button></Link>
           <button>Bermudas</button>
-          <Link to="/cart"><button>Contacto</button></Link>
+          <Link to="/portada"><button>Contacto</button></Link>
           </div>
           </div>
           

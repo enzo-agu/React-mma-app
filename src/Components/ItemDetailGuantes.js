@@ -70,7 +70,7 @@ const unmount=()=>{
            <div className="recuadro ItemCount">
            <img src="../img/guantes-adidas.jpg" width="170 px" height="160 px" alt=""></img>
            <ItemGuantes onAdd={increase} stock={decrease} initial={count} ></ItemGuantes>
-           {flag && <Cart />}
+           
            </div>
            <button onClick={()=>{setflag(true)}} >carrito</button>
            
