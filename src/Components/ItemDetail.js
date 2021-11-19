@@ -11,13 +11,14 @@ export const ItemDetail = ({producto,onAdd,initial,stock}) => {
         <>
         <div className="parr 1 titulos">
            <h1 className="parr1 titulos">Productos</h1>
-          <h4> {producto.id}
-           {producto.name}
-           {producto.category}
-           {producto.price}
-           {producto.stock}
-           {producto.img}
-           </h4>
+           <div className="recuadro">
+          <h4>  {producto.id}</h4>
+           <h4> {producto.name}</h4>
+           <h4> {producto.description}</h4>
+           <h4>  {producto.price}</h4>
+          <h4>{producto.stock}</h4>
+          <img src={producto.image} alt="remeras"/>
+          </div>
            </div>
            <div className="recuadro ItemCount">
            <Link to="/cart"  > <button>

@@ -15,7 +15,6 @@ export const Navbar =()=>{
           <Link to="/">      <button>Home</button></Link>
           <Link to="/category/licras"><button>Lycras</button></Link>
           <Link to="/Guantes"><button>Guantes</button></Link>
-          <button>Bermudas</button>
           <Link to="/portada"><button>Contacto</button></Link>
           </div>
           </div>

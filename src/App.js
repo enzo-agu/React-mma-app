@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import './App.css';
 import { ItemDetailContainer } from './Components/ItemDetailContainer';
@@ -9,8 +9,13 @@ import { Portada } from './Utils/Portada';
 import { ItemContainerGuantes } from './Components/ItemContainerGuantes';
 import { CartContext } from './Components/Context/CartContext';
 import { Cart } from './Components/Cart';
-
+import {getFirestore} from "./firebase";
+// import {doc,getDoc} from 'firebase/firestore'
+import {collection,getDocs} from 'firebase/firestore';
 function App() {
+
+  
+
   return (
     <>
     
@@ -19,7 +24,7 @@ function App() {
       <Navbar/>
       <Switch>
         <Route exact path="/">
-      <ItemListContainer greeting="Bienvenido a la tienda MMA !"/>
+      <ItemListContainer greeting="Consegui tus lycras y guantes de box al mejor precio y calidad !"/>
       <ItemContainerGuantes/>
       <ItemDetailContainer/>
         </Route>

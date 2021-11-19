@@ -2,8 +2,8 @@
 import React from 'react';
 import { useState } from "react"
 import '../Components/Styles/Styles.css';
-import { Cart } from './Cart';
 import { ItemGuantes } from './ItemGuantes';
+import { Link } from 'react-router-dom';
 export const ItemDetailGuantes = ({producto,onAdd,initial,stock}) => {
 
   const[flag,setflag]=useState(true)
@@ -59,20 +59,25 @@ const unmount=()=>{
         <>
         <div className="parr 1 titulos">
            <h1 className="parr1 titulos">Productos</h1>
-          <h4> {producto.id}
-           {producto.name}
-           {producto.category}
-           {producto.price}
-           {producto.stock}
-           {producto.img}
-           </h4>
+           <div className="recuadro">
+          <h4>  {producto.id}</h4>
+           <h4> {producto.name}</h4>
+           <h4> {producto.description}</h4>
+           <h4>  {producto.price}</h4>
+          <h4>{producto.stock}</h4>
+          <img src={producto.image} alt="guantes"/>
+          </div>
            </div>
            <div className="recuadro ItemCount">
            <img src="../img/guantes-adidas.jpg" width="170 px" height="160 px" alt=""></img>
            <ItemGuantes onAdd={increase} stock={decrease} initial={count} ></ItemGuantes>
            
            </div>
-           <button onClick={()=>{setflag(true)}} >carrito</button>
+           <div>
+           <Link to="/cart"  >
+           <button onClick={()=>{setflag(true)}} >Ir a la compra</button>
+           </Link>
+           </div>
            
     
            

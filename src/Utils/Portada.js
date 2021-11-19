@@ -11,7 +11,6 @@ export const Portada = () => {
         <h2 className="letraPortada "> Telefono : 3457-543305</h2>
         </div>
             <div className="">
-                <img src="../img/portada/bermuda-azul.jpg" width="250px" height="200px" alt="bermuda-mma" />
                 <img src="../img/portada/guantes-venum.png" width="300px" height="200px" alt="guantesBox" />
                 <img src="../img/portada/licraVenumMLarga.jpg" width="220px" height="200px" alt="remera-licra" />
             </div>
