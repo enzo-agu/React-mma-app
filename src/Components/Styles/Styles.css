@@ -4,24 +4,26 @@
 }
 .parr1{
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 200px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .botones{
   background-color:darkcyan;
 }
 .recuadro{
-  background-color: cornflowerblue;
+  background-color: rgb(129, 134, 145);
   display: flex;
-  border-top: solid 2px  black;
-  border-right: solid 2px  black;
-	border-bottom: solid 2px  black;
-	border-left: solid 2px  black;;
+  flex-direction: column;
+  border-top: solid 1px  black;
+  border-right: solid 1px  black;
+	border-bottom: solid 1px  black;
+	border-left: solid 1px  black;;
   margin-bottom: 20px;
-  margin-right: 70%;
+  margin-right: 86%;
   margin-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  
 }
 .recuadro-boton{
   margin-left: 40px;
@@ -34,7 +36,7 @@
 }
 
 .titulos{
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family:'Courier New', Courier, monospace;
 }
 .navbar{
     display: flex;
