@@ -1,12 +1,15 @@
+import { useParams } from 'react-router';
 import React from 'react';
 import '../Components/Styles/Styles.css';
 import { Link } from 'react-router-dom';
 
 export const ItemDetail = ({ producto }) => {
+
+
     return (
         <>
             <div className="parr1 titulos">
-                <h4>  {producto.id}</h4>
+                <h4> COD: {producto.id}</h4>
                 <h4> {producto.name}</h4>
                 <h4> {producto.description}</h4>
                 <h4> $ {producto.price}</h4>

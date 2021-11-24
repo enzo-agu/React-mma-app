@@ -27,14 +27,14 @@ function App() {
               <ItemContainerGuantes />
             </Route>
             <Route exact path="/category/licras">
-              <h1 className="parr1 titulos"> Productos</h1>
+              <h1 className="parr1 titulos"> Remeras</h1>
               <ItemDetailContainer />
             </Route>
-            <Route exact path="/category/:ID">
+            <Route exact path="/category/">
               <ItemDetailContainer />
             </Route>
-            <Route exact path="/Guantes">
-              <h1 className="parr1 titulos"> Productos</h1>
+            <Route exact path="/Guantes/">
+              <h1 className="parr1 titulos"> Guantes</h1>
 
               <ItemContainerGuantes />
             </Route>

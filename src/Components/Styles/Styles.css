@@ -103,3 +103,17 @@
   align-items: center;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.Form{
+  display: flex;
+  justify-content:right;
+  margin-right: 100px;
+  
+}
+/* .Form1{
+  display: flex;
+  justify-content:right;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  padding-top: -50px;
+} */

@@ -8,7 +8,7 @@ export const ItemDetailGuantes = ({ producto }) => {
     <>
       <div className="parr1 titulos">
         <div className="">
-          <h4>  {producto.id}</h4>
+          <h4> COD: {producto.id}</h4>
           <h4> {producto.name}</h4>
           <h4> {producto.description}</h4>
           <h4> $ {producto.price}</h4>

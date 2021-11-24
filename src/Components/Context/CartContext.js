@@ -2,6 +2,8 @@ import React from "react";
 import { createContext } from "react";
 import { useState, useContext } from "react";
 import { Data } from "../../Utils/Data";
+
+
 console.log(Data)
 export const ThemeContext = createContext({})
 console.log(ThemeContext)
