@@ -8,7 +8,7 @@
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .botones{
-  background-color:darkcyan;
+  background-color:rgb(102, 190, 190);
 }
 .recuadro{
   background-color: rgb(129, 134, 145);
@@ -110,10 +110,44 @@
   margin-right: 100px;
   
 }
-/* .Form1{
+.recuadroCount{
+  
+  border-top: solid 1px  black;
+  border-right: solid 1px  black;
+	border-bottom: solid 1px  black;
+	border-left: solid 1px  black;;
+ padding-left: 50px ;
+  
+}
+
+.recuadroItemDetail{
   display: flex;
-  justify-content:right;
-  margin-right: 100px;
-  margin-bottom: 100px;
-  padding-top: -50px;
-} */
+  flex-direction: row;
+  justify-content:space-around;
+  align-items:"";
+  border-top: solid 1px  black;
+  border-right: solid 1px  black;
+	border-bottom: solid 1px  black;
+	border-left: solid 1px  black;;
+}
+
+.recuadroItemDetail--2{
+background-color: #9ea6b9;
+  border-top: solid 1px  black;
+  border-right: solid 1px  black;
+	border-bottom: solid 1px  black;
+	border-left: solid 1px  black;;
+
+}
+.formStyle{
+  display: flex;
+  flex-direction:column;
+
+  margin-left:5%;
+  margin-right: 80%;
+  margin-top: 5%;
+}
+.formTitulo{
+
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

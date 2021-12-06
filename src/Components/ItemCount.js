@@ -1,17 +1,20 @@
 import React from 'react';
 import './Styles/Styles.css';
 
-export const ItemCount = ({ stock, initial, onAdd }) => {
+export const ItemCount = ({ decrement, initial, onAdd,stock,addCart,price }) => {
 
    return (
       <>
-         <div className="ItemCount">
-            <div className="parr1">
-
-            </div>
+         <div className="">
+           
+            <div><h4>Quedan {stock}</h4></div>
             <button className="botones" onClick={onAdd} >Agregar</button>
-            <p className="parr1">  {initial} </p>
-            <button className="botones" onClick={stock} >Quitar</button>
+            <div className="parr1"><h4>  {initial} </h4>
+            <div> <h4>$ {price} </h4></div>
+             
+             </div>
+            <button className="botones" onClick={decrement} >Quitar</button>
+            <button  onClick={addCart}>Añadir al carrito</button>
          </div>
       </>
    )
