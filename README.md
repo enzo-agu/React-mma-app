@@ -14,8 +14,8 @@ React-router-dom@5.3.0
 
 Instalación en pc personal:
 
-git init 
-git clone https://github.com/enzo-agu/React-mma-app.git
-npm install
-npm start
+ git init 
+ git clone https://github.com/enzo-agu/React-mma-app.git
+ npm install
+ npm start
 
