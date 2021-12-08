@@ -1,48 +1,44 @@
 import './Styles/Styles.css';
-import { addDoc, getFirestore, query } from '@firebase/firestore';
+import { addDoc, getFirestore } from '@firebase/firestore';
 import { collection } from '@firebase/firestore';
 import { product } from '../Utils/datos';
+import { ThUse } from './ItemDetail';
 export const Cart = () => {
+    const { value, producto, count,setValue } = ThUse()
+
+    
 
 
+const onAdd2=()=>{
+  console.log(count +" "+ producto.description+" "+producto.name )
+  setValue(<div>Compra registrada!
 
+      <h4>Codigo de compra: 00{producto.id}</h4>
+  </div>)
+alert("Tu código de compra es 00 "+ producto.id)
+alert("Orden enviada!")
 
-    const db = getFirestore()
-    const q = query(collection(db, "orders"))
-    console.log(q)
-    const sendOrder = () => {
-
-        const order = product
+ const order ={CodProducto:  + producto.id,cantidad:count}
 
 
         const db = getFirestore()
         const ordersCollection = collection(db, "orders")
         addDoc(ordersCollection, order)
 
-    
-        
-    }
+}
 
 
     return (
         <>
-        
-            <form className="formStyle" >
-                <h2 className="formTitulo">Datos de confirmación</h2>
-                <label >ingrese nombre</label>
-                <input type="text" name="name" required />
+            <h4>
+                
+                {value} {count} {producto.description} {producto.name}
+            </h4>
+            <button onClick={onAdd2}>Finalizar Compra</button>
+           
+            <div>
 
-                <label  >ingrese mail</label>
-                <input type="email" name="mail" required />
-
-                <label >teléfono</label>
-                <input type="number" name="number" required />
-
-                <button type="reset" onClick={sendOrder} >Enviar y finalizar</button>
-
-
-            </form>
-
+            </div>
 
         </>
 

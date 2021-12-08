@@ -15,6 +15,7 @@ export const ItemCount = ({ decrement, initial, onAdd,stock,addCart,price }) => 
              </div>
             <button className="botones" onClick={decrement} >Quitar</button>
             <button  onClick={addCart}>Añadir al carrito</button>
+          
          </div>
       </>
    )

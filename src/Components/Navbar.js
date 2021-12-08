@@ -12,9 +12,8 @@ export const Navbar = () => {
             <div className="navbar" >
                 <h1 className="titulos">Contact Sport! </h1>
                 <div>
-                    <Link to="/">      <button>Home</button></Link>
-                    <Link to="/category/licras"><button>Lycras</button></Link>
-                    <Link to="/Guantes"><button>Guantes</button></Link>
+                    <Link to="/"><button>Home</button></Link>
+                    <Link to="/category/licras"><button>Productos</button></Link>
                     <Link to="/portada"><button>Contacto</button></Link>
                 </div>
             </div>

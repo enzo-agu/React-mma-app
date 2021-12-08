@@ -5,7 +5,7 @@ import { ItemDetailContainer } from './Components/ItemDetailContainer';
 import { Navbar } from './Components/Navbar.js'
 import { ErrorPage } from './Utils/ErrorPage';
 import { Portada } from './Utils/Portada';
-import { ItemContainerGuantes } from './Components/ItemContainerGuantes';
+import { Home } from './Components/Home';
 import { CartContext } from './Components/Context/CartContext';
 import { Cart } from './Components/Cart';
 import { getFirestore } from "./firebase";
@@ -22,22 +22,16 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path="/">
-              <h1 className="parr1">Lycras y guantes de box para tu entrenamiento!</h1>
-              <ItemDetailContainer />
-              <ItemContainerGuantes />
+              <Home />
             </Route>
             <Route exact path="/category/licras">
-              <h1 className="parr1 titulos"> Remeras</h1>
+              <h1 className="parr1 titulos"> Remeras y guantes en stock</h1>
               <ItemDetailContainer />
             </Route>
             <Route exact path="/category/">
               <ItemDetailContainer />
             </Route>
-            <Route exact path="/Guantes/">
-              <h1 className="parr1 titulos"> Guantes</h1>
-
-              <ItemContainerGuantes />
-            </Route>
+            
             <Route exact path="/portada">
               <Portada />
             </Route>

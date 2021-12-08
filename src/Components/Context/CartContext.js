@@ -1,27 +1,26 @@
 import React from "react";
 import { createContext } from "react";
-import { useState,useContext } from "react";
+import {  useContext } from "react";
 
 export const ThemeContext = createContext({})
-console.log(ThemeContext)
 
 export const ThemeUse = () => useContext(ThemeContext)
-export const CartContext = ({ children }) => {
-const[flag,setFlag]=useState(false)
-  const [count,setCount]=useState(1)
+export const CartContext = ({ children, producto }) => {
 
-  const ofAdd=()=>{
-    setFlag(true)
-    setFlag(<div>enviado!</div>)
-  }
- 
+
+
+  
+
+
 
   return (
     <>
-      <ThemeContext.Provider value={{count,setCount,flag,ofAdd} }>
+      <ThemeContext.Provider value={{producto}}>
         {children}
+
       </ThemeContext.Provider>
 
+      
     </>
   )
 
